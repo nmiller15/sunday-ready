@@ -1,0 +1,22 @@
+---
+const { id, className } = Astro.props;
+---
+
+<div class={`container ${className}`} id={id}>
+    <slot />
+</div>
+
+<style>
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            padding: 10px;
+            max-width: 360px;
+        }
+    }
+</style>

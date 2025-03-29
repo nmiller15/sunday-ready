@@ -1,0 +1,140 @@
+html {
+    --color-background: #FEF7D8;
+    --color-text-light: #ECE9DA;
+    --color-portica: #FBDE60;
+    --color-portica-hover: #e5c845;
+    --color-portica-active: #f1de8a;
+    --color-teal: #064C61;
+    --color-pearl: #041D25;
+    --color-silk: #FEF7D8;
+    --color-success: #28a745;
+    --color-danger: #dc3545;
+    --color-warning: #ffc107;
+    --color-info: #17a2b8;
+
+
+    font-size: 16px;
+    /* Base font size */
+    font-family: 'Open Sauce Two', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-pearl);
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.page-content {
+    transition: transform 0.3s ease-in-out;
+    overflow-x: hidden;
+    padding-top: 60px;
+    position: relative;
+    z-index: 10;
+}
+
+.page-content.menu-active {
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.header nav.menu-active {
+    transform: translateX(0%);
+    transition: transform 0.3s ease-in-out;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+p {
+    font-weight: 500;
+}
+
+.txt-lite {
+    color: var(--color-text-light);
+}
+
+.hd-shadow {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hd-shadow-lite {
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.08);
+}
+
+.txt-shadow {
+    text-shadow: 1px 1px .5px rgba(0,0,0, 0.25);
+}
+
+.txt-shadow-lite {
+    text-shadow: 0px 1px .5px rgba(0, 0, 0, 0.05);
+}
+
+@media only screen and (min-width: 600px) {
+    html {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 3.555rem;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    h3 {
+        font-size: 1.11rem;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    h4 {
+        font-size: 1.77rem;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    h5 {
+        font-size: 1.11rem;
+        font-weight: 500;
+        line-height: 1;
+    }
+
+    p {
+        font-weight: 500;
+    }
+}

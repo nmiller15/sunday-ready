@@ -1,0 +1,64 @@
+---
+import Button from "./Button.astro";
+---
+
+<nav id="navigation">
+    <div class="nav-container">
+        <i class="iconoir-nav-arrow-left" id="close-navigation"></i>
+        <ul>
+            <li><a href="#membership">Membership</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/docs">Docs</a></li>
+        </ul>
+        <Button text="Get Started" action="getStarted" />
+    </div>
+</nav>
+
+<style>
+    nav {
+        transform: translateX(100%);
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: var(--color-teal);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding-right: 2rem;
+        transition: transform 0.3s ease-in-out;
+        z-index: 9999;
+    }
+    ul {
+        text-align: right;
+        list-style-type: none;
+        transform: translateY(-15vh);
+        color: var(--color-text-light);
+    }
+    li {
+        font-size: 1.75rem;
+        font-weight: 500;
+        margin-top: 1rem;
+    }
+    a {
+        color: (var(--color-portica));
+        text-decoration: none;
+    }
+    a:active {
+        color: var(--color-portica);
+    }
+    .nav-container {
+        position: relative;
+    }
+    .iconoir-nav-arrow-left {
+        font-size: 3rem;
+        color: var(--color-text-light);
+        position: absolute;
+        padding-top: 0.5rem;
+        transform: translateY(-15vh) translateX(-15vh);
+        cursor: pointer;
+    }
+</style>

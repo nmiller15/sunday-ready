@@ -1,0 +1,52 @@
+---
+const { 
+  text, 
+  action, 
+  id,
+  padding = "48px"
+   } = Astro.props;
+---
+
+<div class="button" id={id}>
+  <p class="button-text">{text}</p>
+</div>
+
+<style define:vars={{ padding }}>
+  .button {
+    background-color: var(--color-portica);
+    color: var(--color-text-light);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    border-radius: 7px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    box-shadow: 3px 4px 0 rgba(0, 0, 0, 1);
+    display: inline-block;
+    width: auto;
+    max-width: max-content;
+  }
+
+  .button:focus {
+    background-color: var(--color-portica);
+  }
+
+  .button:hover {
+    background-color: var(--color-portica-hover);
+  }
+
+  .button:active {
+    background-color: var(--color-portica-active);
+  }
+
+  .button-text {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--color-pearl);
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.08);
+  }
+</style>

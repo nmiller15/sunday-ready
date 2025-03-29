@@ -1,0 +1,35 @@
+---
+const { pageTitle } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"
+        />
+        <title>{pageTitle}</title>
+    </head>
+    <body>
+        <div class="page-content" id="page-content">
+            <slot />
+        </div>
+    </body>
+    <script>
+        const openMenuButton = document.querySelector("#open-navigation");
+        const closeMenuButton = document.querySelector("#close-navigation");
+
+        const navigation = document.querySelector("#navigation");
+
+        openMenuButton?.addEventListener("click", () => {
+            navigation?.classList.add("menu-active");
+        });
+
+        closeMenuButton?.addEventListener("click", () => {
+            navigation?.classList.remove("menu-active");
+        });
+    </script>
+</html>

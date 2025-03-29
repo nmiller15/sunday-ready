@@ -1,0 +1,97 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Section from "../layouts/Section.astro";
+import Container from "../layouts/Container.astro";
+import Button from "../components/Button.astro";
+const pageTitle = "Sunday Ready Solutions";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+	<Header />
+	<Section id="hero" backgroundColor="var(--color-teal)">
+		<div class="bg-image-container">
+			<div class="content-container">
+				<Container class="">
+					<h1 id="hero-headline" class="txt-lite hd-shadow white">
+						Spend more time<br />
+						on <span class="hl">minstry</span>,<br />
+						and less on<br />
+						<span class="hl">software</span>.
+					</h1>
+					<div id="hero-text-container">
+						<p class="subhead hl hd-shadow">
+							What can Planning Center do? A lot.
+						</p>
+						<p id="hero-body" class="txt-shadow txt-lite white">
+							From data entry to automation, we make Planning Center simple, so
+							you can lead with confidence.
+						</p>
+					</div>
+					<Button id="hero-btn" text="Start your membership today!" padding="28px" />
+				</Container>
+			</div>
+			<img
+				src="/src/assets/church-sanctuary.jpg"
+				alt="Church sanctuary background image"
+				id="hero-bg"
+			/>
+		</div>
+	</Section>
+</BaseLayout>
+
+<style is:global>
+	#hero-headline {
+		margin-top: 5.25rem;
+		z-index: 2;
+	}
+
+	#hero-text-container {
+		margin-top: 3rem;
+		margin-bottom: 3.25rem;
+	}
+
+	#hero-body {
+		margin-top: 0.65rem;
+	}
+
+	#hero-btn {
+		margin-bottom: 7rem;
+	}
+
+	.hl {
+		color: var(--color-portica);
+	}
+
+	.subhead {
+		font-weight: 600;
+		font-size: 1.125rem;
+		margin-bottom: 0;
+	}
+
+	.white {
+		color: #fff;
+	}
+
+	.bg-image-container {
+		position: relative;
+		overflow: hidden;
+	}
+
+	.content-container {
+		position: relative;
+		z-index: 5;
+	}
+
+	img#hero-bg {
+		position: absolute;
+		height: 100%;
+		width: auto;
+		top: 0;
+		left: 0;
+		transform: translate(-23%, 4%) scaleX(-1) scale(1.5);
+		opacity: 0.08;
+		z-index: 0;
+	}
+</style>

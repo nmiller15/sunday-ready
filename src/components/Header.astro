@@ -1,0 +1,47 @@
+---
+import Container from "../layouts/Container.astro";
+import Section from "../layouts/Section.astro";
+import Button from "./Button.astro";
+import Navigation from "./Navigation.astro";
+---
+
+<Section backgroundColor="var(--color-background)">
+    <header>
+        <Container >
+            <div class="header">
+                <img
+                    src="src/assets/sunday-ready-horiz-light-background.svg"
+                    alt="Sunday Ready Solutions Logo"
+                    class="header-logo"
+                />
+                <Navigation />
+                <i class="iconoir-menu" id="open-navigation"/>
+                
+            </div>
+        </Container>
+    </header>
+</Section>
+
+<style>
+    header {
+        position: fixed;
+        width: 100vw;
+        top: 0;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .iconoir-menu {
+        font-size: 31px;
+    }
+
+    .header-logo {
+        width: 147px;
+        filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.08));
+    }
+</style>
