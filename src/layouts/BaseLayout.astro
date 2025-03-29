@@ -32,4 +32,27 @@ const { pageTitle } = Astro.props;
             navigation?.classList.remove("menu-active");
         });
     </script>
+    <script>
+        import { createGetCollection } from "astro/content/runtime";
+
+        const header = document.querySelector("#header");
+
+        let lastScrollTop = 0;
+        window.addEventListener("scroll", () => {
+            let currentScrollTop =
+                window.scrollY || document.documentElement.scrollTop;
+
+            if (currentScrollTop > lastScrollTop) {
+                // Scrolling down
+                header?.classList.add("hide");
+                console.log("down");
+            } else {
+                // Scrolling up
+                header?.classList.remove("hide");
+                console.log("up");
+            }
+
+            lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+        });
+    </script>
 </html>

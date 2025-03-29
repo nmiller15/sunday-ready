@@ -4,17 +4,17 @@ import Button from "./Button.astro";
 import Navigation from "./Navigation.astro";
 ---
 
-    <header>
-        <div class="header">
-            <img
-                src="src/assets/sunday-ready-horiz-light-background.svg"
-                alt="Sunday Ready Solutions Logo"
-                class="header-logo"
-            />
-            <Navigation />
-            <i class="iconoir-menu" id="open-navigation"></i>
-        </div>
-    </header>
+<header id="header">
+    <div class="header">
+        <img
+            src="src/assets/sunday-ready-horiz-light-background.svg"
+            alt="Sunday Ready Solutions Logo"
+            class="header-logo"
+        />
+        <Navigation />
+        <i class="iconoir-menu" id="open-navigation"></i>
+    </div>
+</header>
 
 <style>
     header {
@@ -24,6 +24,8 @@ import Navigation from "./Navigation.astro";
         top: 0;
         box-sizing: border-box;
         z-index: 10;
+        background-color: var(--color-background);
+        transition: transform 0.3s ease-in-out;
     }
 
     .header {

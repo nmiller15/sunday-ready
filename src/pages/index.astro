@@ -9,33 +9,48 @@ const pageTitle = "Sunday Ready Solutions";
 
 <BaseLayout pageTitle={pageTitle}>
 	<Header />
-	 <section id="hero">
-		 <div class="bg-image-container">
-				<Container class="">
-					<h1 id="hero-headline" class="txt-lite hd-shadow white">
-						Spend more time<br />
-						on <span class="hl">minstry</span>,<br />
-						and less on<br />
-						<span class="hl">software</span>.
-					</h1>
-					<div id="hero-text-container">
-						<p class="subhead hl hd-shadow">
-							What can Planning Center do? A lot.
-						</p>
-						<p id="hero-body" class="txt-shadow txt-lite white">
-							From data entry to automation, we make Planning Center simple, so
-							you can lead with confidence.
-						</p>
-					</div>
-					<Button id="hero-btn" text="Start your membership today!" padding="28px" />
-				</Container>
-				<img
-					src="/src/assets/church-sanctuary.jpg"
-					alt="Church sanctuary background image"
-					id="hero-bg"
+	<section id="hero">
+		<div class="bg-image-container">
+			<Container class="">
+				<h1 id="hero-headline" class="txt-lite hd-shadow white">
+					Spend more time<br />
+					on <span class="hl">minstry</span>,<br />
+					and less on<br />
+					<span class="hl">software</span>.
+				</h1>
+				<div id="hero-text-container">
+					<p class="subhead hl hd-shadow">
+						What can Planning Center do? A lot.
+					</p>
+					<p id="hero-body" class="txt-shadow txt-lite white">
+						From data entry to automation, we make Planning Center simple, so
+						you can lead with confidence.
+					</p>
+				</div>
+				<Button
+					id="hero-btn"
+					text="Start your membership today!"
+					padding="28px"
 				/>
-			</div>
-	 </section>
+			</Container>
+			<img
+				src="/src/assets/church-sanctuary.jpg"
+				alt="Church sanctuary background image"
+				id="hero-bg"
+			/>
+		</div>
+	</section>
+	<section id="benefits">
+		<Container id="benefits-intro">
+			<h2 class="hd-shadow-lite">Planning Center Support<br/> To Keep Your Ministry<br/> Running Smoothly</h2>
+			<p>
+				The administrative demands of running a church can quickly overwhelm a small staff. Get the support you need to stay organized and focused on ministry.
+			</p>
+		</Container>
+		<Container />
+		<Container />
+		<Container />
+	</section>
 </BaseLayout>
 
 <style is:global>
@@ -55,9 +70,11 @@ const pageTitle = "Sunday Ready Solutions";
 
 	#hero-body {
 		margin-top: 0.65rem;
+		width: 18rem;
 	}
 
 	#hero-btn {
+		margin: auto;
 		margin-bottom: 7rem;
 	}
 
@@ -89,5 +106,9 @@ const pageTitle = "Sunday Ready Solutions";
 		transform: translate(-23%, 4%) scaleX(-1) scale(1.5);
 		opacity: 0.08;
 		z-index: 0;
+	}
+
+	#benefits-intro {
+		margin-top: 3.375rem;
 	}
 </style>
