@@ -2,7 +2,6 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/global.css";
 import Header from "../components/Header.astro";
-import Section from "../layouts/Section.astro";
 import Container from "../layouts/Container.astro";
 import Button from "../components/Button.astro";
 const pageTitle = "Sunday Ready Solutions";
@@ -10,9 +9,8 @@ const pageTitle = "Sunday Ready Solutions";
 
 <BaseLayout pageTitle={pageTitle}>
 	<Header />
-	<Section id="hero" backgroundColor="var(--color-teal)">
-		<div class="bg-image-container">
-			<div class="content-container">
+	 <section id="hero">
+		 <div class="bg-image-container">
 				<Container class="">
 					<h1 id="hero-headline" class="txt-lite hd-shadow white">
 						Spend more time<br />
@@ -31,17 +29,20 @@ const pageTitle = "Sunday Ready Solutions";
 					</div>
 					<Button id="hero-btn" text="Start your membership today!" padding="28px" />
 				</Container>
+				<img
+					src="/src/assets/church-sanctuary.jpg"
+					alt="Church sanctuary background image"
+					id="hero-bg"
+				/>
 			</div>
-			<img
-				src="/src/assets/church-sanctuary.jpg"
-				alt="Church sanctuary background image"
-				id="hero-bg"
-			/>
-		</div>
-	</Section>
+	 </section>
 </BaseLayout>
 
 <style is:global>
+	section#hero {
+		background-color: var(--color-teal);
+	}
+
 	#hero-headline {
 		margin-top: 5.25rem;
 		z-index: 2;
@@ -77,11 +78,6 @@ const pageTitle = "Sunday Ready Solutions";
 	.bg-image-container {
 		position: relative;
 		overflow: hidden;
-	}
-
-	.content-container {
-		position: relative;
-		z-index: 1;
 	}
 
 	img#hero-bg {

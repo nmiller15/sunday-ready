@@ -1,11 +1,9 @@
 ---
 import Container from "../layouts/Container.astro";
-import Section from "../layouts/Section.astro";
 import Button from "./Button.astro";
 import Navigation from "./Navigation.astro";
 ---
 
-<Section zIndex="5" backgroundColor="var(--color-background)">
     <header>
         <div class="header">
             <img
@@ -17,7 +15,6 @@ import Navigation from "./Navigation.astro";
             <i class="iconoir-menu" id="open-navigation"></i>
         </div>
     </header>
-</Section>
 
 <style>
     header {
@@ -26,6 +23,7 @@ import Navigation from "./Navigation.astro";
         height: 3.8rem;
         top: 0;
         box-sizing: border-box;
+        z-index: 10;
     }
 
     .header {
