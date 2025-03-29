@@ -1,16 +1,22 @@
 ---
-const { backgroundColor, id, className } = Astro.props;
+const { 
+    backgroundColor, 
+    id = "", 
+    className = "",
+    zIndex = "1" } = Astro.props;
 ---
 
 <div class={`section ${className}`} id={id}>
     <slot />
 </div>
 
-<style define:vars={{ backgroundColor }}>
+<style define:vars={{ backgroundColor, zIndex }}>
     .section {
         background-color: var(--backgroundColor);
         width: 100vw;
         padding: 0px;
         margin: 0px;
+        position: relative;
+        z-index: var(--zIndex);
     }
 </style>

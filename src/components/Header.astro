@@ -5,35 +5,38 @@ import Button from "./Button.astro";
 import Navigation from "./Navigation.astro";
 ---
 
-<Section backgroundColor="var(--color-background)">
+<Section zIndex="5" backgroundColor="var(--color-background)">
     <header>
-        <Container >
-            <div class="header">
-                <img
-                    src="src/assets/sunday-ready-horiz-light-background.svg"
-                    alt="Sunday Ready Solutions Logo"
-                    class="header-logo"
-                />
-                <Navigation />
-                <i class="iconoir-menu" id="open-navigation"/>
-                
-            </div>
-        </Container>
+        <div class="header">
+            <img
+                src="src/assets/sunday-ready-horiz-light-background.svg"
+                alt="Sunday Ready Solutions Logo"
+                class="header-logo"
+            />
+            <Navigation />
+            <i class="iconoir-menu" id="open-navigation"></i>
+        </div>
     </header>
 </Section>
 
 <style>
     header {
         position: fixed;
-        width: 100vw;
+        width: 100%;
+        height: 3.8rem;
         top: 0;
+        box-sizing: border-box;
     }
 
     .header {
         display: flex;
         justify-content: space-between;
-        max-width: 360px;
+        width: 100vw;
+        height: 100%;
         margin: 0 auto;
+        padding: 0 1.13rem;
+        box-sizing: border-box;
+        align-items: center;
     }
 
     .iconoir-menu {
