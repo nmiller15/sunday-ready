@@ -45,14 +45,33 @@ const { pageTitle } = Astro.props;
             if (currentScrollTop > lastScrollTop) {
                 // Scrolling down
                 header?.classList.add("hide");
-                console.log("down");
             } else {
                 // Scrolling up
                 header?.classList.remove("hide");
-                console.log("up");
             }
 
             lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
         });
+    </script>
+    <script>
+        const auditArrow = document.querySelector("#audit-arrow");
+        const auditContent = document.querySelector("#systems-audit-content");
+
+        const migrateArrow = document.querySelector("#migration-arrow");
+        const migrateContent = document.querySelector("#migration-content")
+
+        function expansionListener(arrow: any, content: any) {
+            arrow.addEventListener("click", () => {
+                const isHidden = content?.classList.toggle("hide-content");
+                if (isHidden) {
+                    arrow.classList.add("closed");
+                } else {
+                    arrow.classList.remove("closed");
+                }
+            });
+        }
+
+        expansionListener(auditArrow, auditContent);
+        expansionListener(migrateArrow, migrateContent);
     </script>
 </html>

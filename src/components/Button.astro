@@ -1,40 +1,55 @@
 ---
-const { 
-  text, 
-  action, 
+const {
+  text,
+  action,
   id = "",
-  padding = "48px"
-   } = Astro.props;
+  padding = "48px",
+  width = "auto",
+  buttonStyle = "primary",
+} = Astro.props;
 ---
 
-<div class="button" id={id}>
-  <p class="button-text">{text}</p>
+<div class={`button ${buttonStyle}`} id={id}>
+  <p class={`button-text text-${buttonStyle}`}>{text}</p>
 </div>
 
-<style define:vars={{ padding }}>
+<style define:vars={{ padding, width }}>
   .button {
-    background-color: var(--color-portica);
-    color: var(--color-text-light);
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: var(--padding);
     padding-right: var(--padding);
     border-radius: 7px;
+    margin-bottom: 1rem;
     cursor: pointer;
     text-align: center;
     font-size: 1.25rem;
     font-weight: 600;
     box-shadow: 3px 4px 0 rgba(0, 0, 0, 1);
     display: inline-block;
-    width: auto;
+    width: var(--width);
     max-width: max-content;
   }
 
-  .button:focus {
+  .primary {
     background-color: var(--color-portica);
   }
 
+  .secondary {
+    background-color: var(--color-teal);
+  }
+
+  .button:focus,
   .button:hover {
+    background-color: var(--color-portica);
+  }
+
+  div.button.secondary:focus,
+  div.button.secondary:hover {
+    background-color: var(--color-teal) !important;
+  }
+
+ {
     background-color: var(--color-portica-hover);
   }
 
@@ -42,11 +57,21 @@ const {
     background-color: var(--color-portica-active);
   }
 
-  .button-text {
+  .button p.button-text {
     margin: 0;
+    padding: 0;
     font-weight: 700;
     font-size: 1.25rem;
     color: var(--color-pearl);
     text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.08);
+  }
+
+  .text-primary {
+    color: var(--color-pearl);
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.08);
+  }
+
+  .button .button-text.text-secondary {
+    color: var(--color-text-light);
   }
 </style>

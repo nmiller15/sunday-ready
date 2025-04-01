@@ -1,0 +1,208 @@
+section#hero {
+  background-color: var(--color-teal);
+}
+
+#hero-headline {
+  margin-top: 5.25rem;
+  z-index: 2;
+}
+
+#hero-text-container {
+  margin-top: 3rem;
+  margin-bottom: 3.25rem;
+}
+
+#hero-body {
+  margin-top: 0.65rem;
+  width: 18rem;
+}
+
+#hero-btn {
+  margin: auto;
+  margin-bottom: 7rem;
+}
+
+.hl {
+  color: var(--color-portica);
+}
+
+.subhead {
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-bottom: 0;
+}
+
+.white {
+  color: #fff;
+}
+
+.bg-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+img#hero-bg {
+  position: absolute;
+  height: 100%;
+  width: auto;
+  top: 0;
+  left: 0;
+  transform: translate(-23%, 4%) scaleX(-1) scale(1.5);
+  opacity: 0.08;
+  z-index: 0;
+}
+
+section#benefits {
+  text-align: center;
+  word-wrap: balance;
+}
+
+section#benefits .benefits-container {
+  padding: 3.375rem 2.75rem;
+}
+
+.benefits-icon {
+  height: 4.6875rem;
+  width: 4.6875rem;
+  color: var(--color-pearl);
+  margin: auto;
+}
+
+.benefits-icon svg {
+  stroke: var(--color-teal);
+  stroke-width: 1.65;
+}
+
+section#what-we-do {
+  background-color: var(--color-portica);
+}
+
+section#what-we-do h2 {
+  margin-top: 3.375rem;
+  margin-bottom: 0;
+}
+
+section#what-we-do p {
+  padding: 0 2.75rem;
+  text-align: center;
+}
+
+section#what-we-do p#what-we-do-copy {
+  margin-top: 1.625rem;
+  
+}
+
+.card { 
+  background-color: var(--color-background);
+  border-radius: 31px;
+  box-shadow: 3px 4px 14px rgba(0, 0, 0, 0.63);
+  padding: 1rem 2rem;
+  margin-top: 3.375rem;
+}
+
+.card h4 {
+  text-align: center;
+  margin: 0;
+  margin-top: 1rem; 
+}
+
+.card p.price {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-top: 1.25rem;
+}
+
+.card p.price span {
+  font-size: .75rem;
+  font-weight: 600;
+}
+
+.card h5 {
+  margin: 0;
+}
+
+ul.card-list {
+  padding-left: .75rem;
+  margin-bottom: 1.625rem;
+}
+
+ul.card-list .button {
+  width: 100%;
+}
+
+ul.card-list li {
+  font-size: .687rem;
+  margin-bottom: .859rem;
+}
+
+ul.card-list li::marker {
+  transform: translateX(10);
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#need-something-more h3 {
+  font-weight: 400; 
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  margin-top: 2.5rem;
+}
+
+section#what-we-do #need-something-more p {
+  font-size: 0.875rem;
+  text-align: left;
+  width: 100%;
+  padding:0 1rem;
+  box-sizing: border-box;
+}
+
+section#what-we-do .caption {
+  font-size: .687rem;
+  padding: 0;
+  text-align: left;
+}
+
+.card.one-time-offers h4 {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.hide-content {
+  display: none;
+  opacity: 0;
+}
+
+section#what-we-do .hide-content h4 {
+  text-align: center;
+}
+
+.card.one-time-offers .svg-container {
+  position: absolute;
+  height: 2.625rem;
+  width: 2.625rem;
+  right: 0;
+  transform: translateX(-2.4375rem) translateY(.25rem);
+}
+
+.card svg {
+  transition: transform 0.3s ease-in;
+}
+
+.card svg.closed {
+  transform: rotate(180deg);
+  transform-origin: center center;
+}
+
+div.card.one-time-offers {
+  margin-top: 1.5rem;
+}
+
+section#what-we-do .button {
+  margin-top: 2rem;
+}
