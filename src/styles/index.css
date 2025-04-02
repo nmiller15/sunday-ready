@@ -206,3 +206,81 @@ div.card.one-time-offers {
 section#what-we-do .button {
   margin-top: 2rem;
 }
+
+.step {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+section#how-it-works .container {
+  padding: 2rem;
+}
+
+section#how-it-works .number-container svg {
+  height: 4rem;
+  width: 4rem;
+  fill: var(--color-teal);
+  stroke: var(--color-pearl);
+  stroke-width: .0225rem;
+}
+
+section#how-it-works .steps-container .step h3 {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+section#how-it-works .steps-container .step p {
+  font-size: .625rem;
+}
+
+section#support {
+  background-color: var(--color-teal);
+  text-align: center;
+  padding: 3.25rem 1rem;
+}
+
+section#support .support-icon svg {
+  height: 4.6875rem;
+  width: 4.6875rem;
+  stroke: var(--color-portica);
+  stroke-width: 2;
+  filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.25));
+}
+
+.card-portica {
+  background-color: var(--color-portica);
+  padding: 1rem 2rem;
+  margin-top: 4.625rem;
+  margin-bottom: 4.625rem;
+}
+
+section#cta div.card.card-portica h4, 
+section#cta div.card.card-portica p {
+  text-align: left;
+}
+
+section#cta div.card.card-portica h4 {
+  line-height: 1.5rem;
+}
+
+section#cta {
+  padding: 0 1rem;
+}
+
+section#cta .button-container {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+section#cta .button-container .button {
+  width: 100%;
+}
+
+section#cta .button-container .button p.button-text.text-secondary {
+  text-align: center;
+}
