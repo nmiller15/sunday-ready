@@ -1,17 +1,21 @@
 ---
 import Button from "./Button.astro";
+import Social from "./Social.astro";
 ---
 
 <nav id="navigation">
     <div class="nav-container">
         <i class="iconoir-nav-arrow-left" id="close-navigation"></i>
         <ul>
-            <li><a href="#membership">Membership</a></li>
+            <li><a id="membership-link" href="#what-we-do">Membership</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/blog">Blog</a></li>
             <li><a href="/docs">Docs</a></li>
         </ul>
         <Button text="Get Started" action="getStarted" />
+    </div>
+    <div class="social">
+        <Social />
     </div>
 </nav>
 
@@ -60,5 +64,10 @@ import Button from "./Button.astro";
         padding-top: 0.5rem;
         transform: translateY(-15vh) translateX(-15vh);
         cursor: pointer;
+    }
+
+    .social {
+        position: absolute;
+        bottom: 4rem;
     }
 </style>

@@ -1,12 +1,31 @@
 ---
 import NewsletterSignUp from "./NewsletterSignUp.astro";
-
+import Social from "./Social.astro";
 ---
 
 <footer>
   <div>
-    <h2 class="hd-shadow txt-lite">Get Planning Center tips and tricks right in your inbox!</h2>
+    <h2 class="hd-shadow txt-lite">
+      Get Planning Center tips and tricks right in your inbox!
+    </h2>
     <NewsletterSignUp />
+  </div>
+  <div id="footer-logo-container">
+    <img
+      src="/src/assets/horizontal-light.svg"
+      alt="Sunday Ready Solutions logo."
+    />
+    <p class="txt-shadow txt-lite caption">
+      Sunday Ready Solutions provides expert Planning Center management, custom
+      workflows, and administrative support so you can focus on what matters
+      most.
+    </p>
+  </div>
+  <Social />
+  <div class="copyright-container">
+    <p class="copyright">© 2025, Sunday Ready Solutions. All Rights Reserved.</p>
+    <!-- todo: add a privacy policy -->
+    <a href="/" class="copyright">Privacy Policy</a>
   </div>
 </footer>
 
@@ -15,7 +34,38 @@ import NewsletterSignUp from "./NewsletterSignUp.astro";
     background-color: var(--color-teal);
     margin: 0;
     padding: 1rem;
+    padding-bottom: 0;
   }
 
+  p.caption {
+    font-weight: 400;
+    font-size: .75rem;
+  }
 
+  #footer-logo-container {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  #footer-logo-container img {
+    width: 10rem;
+  }
+
+  .copyright-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+
+  .copyright {
+    color: var(--color-silk);
+    font-size: .5rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400;
+  }
 </style>

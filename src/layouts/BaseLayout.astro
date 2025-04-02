@@ -21,6 +21,7 @@ const { pageTitle } = Astro.props;
     <script>
         const openMenuButton = document.querySelector("#open-navigation");
         const closeMenuButton = document.querySelector("#close-navigation");
+        const navLinks = document.querySelectorAll("div.nav-container ul li a");
 
         const navigation = document.querySelector("#navigation");
 
@@ -31,6 +32,12 @@ const { pageTitle } = Astro.props;
         closeMenuButton?.addEventListener("click", () => {
             navigation?.classList.remove("menu-active");
         });
+
+        navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                navigation?.classList.remove("menu-active");
+            })
+        })
     </script>
     <script>
         import { createGetCollection } from "astro/content/runtime";
