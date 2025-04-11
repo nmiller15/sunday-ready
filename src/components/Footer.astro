@@ -4,24 +4,28 @@ import Social from "./Social.astro";
 ---
 
 <footer>
-  <div>
-    <h2 class="hd-shadow txt-lite">
-      Get Planning Center tips and tricks right in your inbox!
-    </h2>
-    <NewsletterSignUp />
+  <div id="footer-container">
+    <div id="newsletter-container">
+      <h2 class="hd-shadow txt-lite">
+        Get Planning Center tips and tricks right in your inbox!
+      </h2>
+      <NewsletterSignUp />
+    </div>
+    <div id="footer-content-container">
+      <div id="footer-logo-container">
+        <img
+          src="/src/assets/horizontal-light.svg"
+          alt="Sunday Ready Solutions logo."
+        />
+        <p class="txt-shadow txt-lite caption">
+          Sunday Ready Solutions provides expert Planning Center management, custom
+          workflows, and administrative support so you can focus on what matters
+          most.
+        </p>
+      </div>
+      <Social />
+    </div>
   </div>
-  <div id="footer-logo-container">
-    <img
-      src="/src/assets/horizontal-light.svg"
-      alt="Sunday Ready Solutions logo."
-    />
-    <p class="txt-shadow txt-lite caption">
-      Sunday Ready Solutions provides expert Planning Center management, custom
-      workflows, and administrative support so you can focus on what matters
-      most.
-    </p>
-  </div>
-  <Social />
   <div class="copyright-container">
     <p class="copyright">© 2025, Sunday Ready Solutions. All Rights Reserved.</p>
     <!-- todo: add a privacy policy -->

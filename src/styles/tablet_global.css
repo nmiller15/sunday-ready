@@ -1,0 +1,111 @@
+@media only screen and (min-width: 600px)
+{
+  header#header {
+    height: 4.3rem;
+  }
+
+  header#header div.header img.header-logo {
+    width: 12rem;
+
+  }
+
+  #hero .bg-image-container .container {
+    padding: 2rem;
+    margin: 0;
+    max-width: 60rem;
+  }
+
+  section#benefits div#benefits-intro.container {
+    max-width: 25rem;
+    margin-top: 10rem;
+  }
+
+  section#benefits div#benefits-intro.container.benefits-container {
+    padding: 0;
+  }
+
+  section#benefits div.container.benefits-container {
+    max-width: 26rem;
+  }
+
+  section#benefits div.container.benefits-container div.benefits-icon {
+    height: 8rem;
+    width: 8rem;
+  }
+
+  section#what-we-do div.container {
+    max-width: 28rem;
+  }
+
+  section#what-we-do h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  section#what-we-do div.button-container div.button.secondary {
+    margin: 4rem 0;
+  }
+
+  section#what-we-do div.container h2 {
+    margin-top: 4rem;
+  }
+
+  section#how-it-works div.container {
+    max-width: 27rem;
+  }
+
+  section#how-it-works div.container div.step div.step-content p {
+    font-size: .725rem;
+  }
+
+  div#page-content.page-content section#cta {
+    padding: 0 3rem;
+  }
+  
+  div#page-content.page-content section#cta div.card.card-portica h4 {
+    line-height: 120%;
+  }
+
+  div#page-content.page-content footer {
+    padding: 4rem;
+  }  
+
+  div#page-content.page-content h2 {
+    margin: 0 0 4rem 0;
+  }
+
+  div#page-content.page-content form label {
+    font-size: 1.5rem;
+    top: -2.45rem;
+  }
+
+  div#page-content.page-content form input {
+    font-size: 1.5rem;
+    padding-left: 5.75rem;
+  }
+
+  div#page-content.page-content footer {
+    padding-bottom: 0;
+  }
+
+  div#page-content.page-content footer div#footer-logo-container {
+    text-align: center;
+  }
+
+  div#newsletter-submit-container div#submit.button.primary {
+    margin-top: 1rem;
+  }
+
+  div#page-content.page-content footer div#footer-logo-container p {
+    font-size: 1.5rem;
+  }
+
+  div#page-content.page-content footer div#footer-logo-container img {
+    width: 14rem;
+    margin-bottom: 1rem;
+  }
+
+  div#page-content.page-content footer div.copyright-container {
+    padding: 0;
+  }
+}

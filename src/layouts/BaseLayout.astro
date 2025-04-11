@@ -1,5 +1,8 @@
 ---
 const { pageTitle } = Astro.props;
+import "../styles/global.css";
+import "../styles/tablet_global.css";
+import "../styles/desktop_global.css";
 ---
 
 <!doctype html>
@@ -33,11 +36,11 @@ const { pageTitle } = Astro.props;
             navigation?.classList.remove("menu-active");
         });
 
-        navLinks.forEach(link => {
+        navLinks.forEach((link) => {
             link.addEventListener("click", () => {
                 navigation?.classList.remove("menu-active");
-            })
-        })
+            });
+        });
     </script>
     <script>
         import { createGetCollection } from "astro/content/runtime";
@@ -65,7 +68,7 @@ const { pageTitle } = Astro.props;
         const auditContent = document.querySelector("#systems-audit-content");
 
         const migrateArrow = document.querySelector("#migration-arrow");
-        const migrateContent = document.querySelector("#migration-content")
+        const migrateContent = document.querySelector("#migration-content");
 
         function expansionListener(arrow: any, content: any) {
             arrow.addEventListener("click", () => {
