@@ -12,7 +12,6 @@ html {
     --color-warning: #ffc107;
     --color-info: #17a2b8;
 
-
     font-size: 16px;
     /* Base font size */
     font-family: 'Open Sauce Two', sans-serif;
@@ -37,7 +36,6 @@ body {
 .page-content.menu-active {
     transform: translateX(-100%);
     transition: transform 0.5s ease-in-out;
-    
 }
 
 .header nav.menu-active {
@@ -92,11 +90,11 @@ p {
 }
 
 .txt-shadow {
-    text-shadow: 1px 2px 2px rgba(0,0,0, .25);
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
 .txt-shadow-lite {
-    text-shadow: 0px 1px .5px rgba(0, 0, 0, 0.05);
+    text-shadow: 0px 1px 0.5px rgba(0, 0, 0, 0.05);
 }
 
 header.hide {
@@ -105,6 +103,8 @@ header.hide {
 }
 
 @media only screen and (min-width: 600px) {
+
+    /* Typography */
     html {
         font-size: 18px;
     }
@@ -141,5 +141,405 @@ header.hide {
 
     p {
         font-weight: 500;
+    }
+
+    /* Tablet-specific styles */
+    header#header {
+        height: 4.3rem;
+    }
+
+    header#header div.header img.header-logo {
+        width: 12rem;
+    }
+
+    #hero .bg-image-container .container {
+        padding: 2rem;
+        margin: 0;
+        max-width: 60rem;
+    }
+
+    section#benefits div#benefits-intro.container {
+        max-width: 25rem;
+        margin-top: 10rem;
+    }
+
+    section#benefits div#benefits-intro.container.benefits-container {
+        padding: 0;
+    }
+
+    section#benefits div.container.benefits-container {
+        max-width: 26rem;
+    }
+
+    section#benefits div.container.benefits-container div.benefits-icon {
+        height: 8rem;
+        width: 8rem;
+    }
+
+    section#what-we-do div.container {
+        max-width: 28rem;
+    }
+
+    section#what-we-do h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    section#what-we-do div.button-container div.button.secondary {
+        margin: 4rem 0;
+    }
+
+    section#what-we-do div.container h2 {
+        margin-top: 4rem;
+    }
+
+    section#how-it-works div.container {
+        max-width: 27rem;
+    }
+
+    section#how-it-works div.container div.step div.step-content p {
+        font-size: 0.725rem;
+    }
+
+    div#page-content.page-content section#cta {
+        padding: 0 3rem;
+    }
+
+    div#page-content.page-content section#cta div.card.card-portica h4 {
+        line-height: 120%;
+    }
+
+    div#page-content.page-content footer {
+        padding: 4rem;
+    }
+
+    div#page-content.page-content h2 {
+        margin: 0 0 4rem 0;
+    }
+
+    div#page-content.page-content form label {
+        font-size: 1.5rem;
+        top: -2.45rem;
+    }
+
+    div#page-content.page-content form input {
+        font-size: 1.5rem;
+        padding-left: 5.75rem;
+    }
+
+    div#page-content.page-content footer {
+        padding-bottom: 0;
+    }
+
+    div#page-content.page-content footer div#footer-logo-container {
+        text-align: center;
+    }
+
+    div#newsletter-submit-container div#submit.button.primary {
+        margin-top: 1rem;
+    }
+
+    div#page-content.page-content footer div#footer-logo-container p {
+        font-size: 1.5rem;
+    }
+
+    div#page-content.page-content footer div#footer-logo-container img {
+        width: 14rem;
+        margin-bottom: 1rem;
+    }
+
+    div#page-content.page-content footer div.copyright-container {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+
+    /* Desktop-specific overrides */
+    body div#page-content header#header div.header i {
+        display: none;
+    }
+
+    body div#page-content header#header {
+        height: 3.5rem;
+    }
+
+    body div#page-content header#header div.header {
+        max-width: 1200px;
+    }
+
+    body div#page-content div#hero-text-container {
+        width: 24rem;
+    }
+
+    body div#page-content div#hero-text-container p.subhead {
+        font-size: 1.333rem;
+    }
+
+    body div#page-content header#header div.header nav {
+        display: flex;
+        transform: translateX(0);
+        width: auto;
+        height: auto;
+        position: static;
+        background-color: rgba(0, 0, 0, 0);
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    body div#page-content header#header div.header nav div.nav-container {
+        position: static;
+        display: flex;
+        height: auto;
+    }
+
+    body div#page-content header#header div.header nav div.social {
+        display: none;
+    }
+
+    body div#page-content header#header div.header nav div.nav-container ul {
+        text-align: center;
+        color: var(--color-pearl);
+        transform: translateY(0);
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-right: 2rem;
+    }
+
+    body div#page-content header#header div.header nav div.nav-container ul li {
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    body div#page-content header#header {
+        height: auto;
+    }
+
+    body div#page-content header#header div.header img {
+        width: 9rem;
+    }
+
+    body div#page-content header#header div.header nav div.nav-container div.button.primary {
+        height: 1.2rem;
+        margin: 1rem 0;
+    }
+
+    body div#page-content header#header div.header nav div.nav-container ul li a {
+        font-size: 0.833rem;
+    }
+
+    body div#page-content div.button p.button-text {
+        font-size: 1rem;
+        padding-bottom: 0.75rem;
+    }
+
+    body .page-content {
+        padding-top: 4.5rem;
+    }
+
+    body div#page-content section#hero {
+        max-width: none;
+    }
+
+    div#page-content.page-content section#hero div.bg-image-container .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    div#page-content.page-content section#hero div.bg-image-container img {
+        transform: translate(15%, 0) scaleX(-1) scale(1.5);
+    }
+
+    body div#page-content div.button p.button-text {
+        font-size: 1.25rem;
+        padding-bottom: 0;
+    }
+
+    body div#page-content section#benefits div.container {
+        max-width: 1200px;
+        padding: 0 4rem;
+    }
+
+    body div#page-content section#benefits div#benefits-intro {
+        width: 27.725rem;
+    }
+
+    body div#page-content.page-content section#benefits div.benefits-tiles {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #benefits-intro>p {
+        margin-bottom: 4rem;
+    }
+
+    body div#page-content.page-content section#benefits div.benefits-tiles h3 {
+        font-size: 1.11rem;
+    }
+
+    body div#page-content.page-content section#benefits div.benefits-tiles p {
+        font-size: 0.833rem;
+    }
+
+    body div#page-content.page-content section#benefits div.benefits-tiles div.benefits-container {
+        padding: 0 2rem;
+        word-wrap: balance;
+    }
+
+    body div#page-content.page-content section#benefits div.benefits-tiles {
+        margin-bottom: 10rem;
+    }
+
+    body div#page-content.page-content section#benefits div.benefits-tiles div.benefits-icon {
+        height: 70px;
+        width: 70px;
+    }
+
+    body div#page-content.page-content section#benefits div.benefits-tiles svg {
+        height: 70px;
+        width: 70px;
+    }
+
+    body div#page-content.page-content section#what-we-do div.container {
+        max-width: 700px;
+    }
+
+    body section#what-we-do div.container h2 {
+        margin-bottom: 1rem;
+    }
+
+    section#what-we-do p#what-we-do-copy {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .card {
+        max-width: 30rem;
+        margin: 0 auto;
+    }
+
+    .card .includes .card-list li {
+        font-size: 0.9rem;
+        padding-left: 1rem;
+    }
+
+    section#what-we-do div.container div.card.one-time-offers div.svg-container {
+        transform: translateX(-3.5rem) translateY(0.65rem);
+    }
+
+    section#what-we-do div.container div.card.one-time-offers p.price {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    section#what-we-do div.container div.card.one-time-offers .caption {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    section#how-it-works div.container {
+        max-width: 800px;
+    }
+
+    section#how-it-works div.container h2 {
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    #how-it-works>div>div:nth-child(1)>p {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    section#how-it-works div.container div.steps-container svg {
+        height: 5rem;
+        width: 5rem;
+    }
+
+    section#how-it-works div.container div.steps-container div.step {
+        margin-top: 2rem;
+    }
+
+    section#how-it-works div.container div.steps-container div.step div.step-content h3 {
+        font-size: 1.25rem;
+        margin-top: 0.8rem;
+    }
+
+    section#how-it-works div.container div.steps-container div.step div.step-content p {
+        font-size: 0.8rem;
+        margin-top: 0.8rem;
+    }
+
+    section#how-it-works div.container div.steps-container {
+        margin-bottom: 4rem;
+    }
+
+    section#support div.support-icon {
+        margin-top: 6rem;
+        margin-bottom: 1rem;
+    }
+
+    body div#page-content.page-content section#support h2 {
+        margin: 0 0 2rem 0;
+    }
+
+    body div#page-content.page-content section#support p {
+        max-width: 600px;
+        margin: 0 auto;
+        margin-bottom: 6rem;
+    }
+
+    div#footer-container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 6rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    html body div#page-content.page-content div#footer-content-container div#footer-logo-container>p.caption {
+        font-size: 0.8rem;
+        max-width: 20rem;
+        text-align: left;
+    }
+
+    div#page-content.page-content div#footer-content-container div#footer-logo-container {
+        align-items: start;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #footer-content-container>div.social {
+        justify-content: start;
+        padding-left: 1.5rem;
+    }
+
+    div#page-content.page-content div#newsletter-container {
+        max-width: 600px;
+    }
+
+    div#page-content.page-content div#newsletter-container h2 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        ;
+    }
+
+    div#page-content.page-content div#newsletter-container input {
+        font-size: 1rem;
+    }
+
+    div#page-content.page-content div#newsletter-container label {
+        font-size: 1.2rem;
+        top: -2.25rem;
+    }
+
+    div#page-content.page-content div.copyright-container {
+        max-width: 1200px;
+        margin: 2rem auto 0 auto;
     }
 }
